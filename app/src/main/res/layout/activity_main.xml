@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#c198ff"
+    tools:context="iiitd.shanu.math_quiz.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView"
+        android:background="#00bfff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="true"
+        android:id="@+id/button"
+        android:onClick="onTrueOrFalseButtonClick"
+        android:background="#575654"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="false"
+        android:id="@+id/button2"
+        android:onClick="onTrueOrFalseButtonClick"
+        android:background="#575654"
+        android:layout_alignTop="@+id/button"
+        android:layout_toRightOf="@+id/btn_hint"
+        android:layout_toEndOf="@+id/btn_hint" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hint"
+        android:id="@+id/btn_hint"
+        android:onClick="onHintButtonClick"
+        android:background="#625f55"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cheat"
+        android:id="@+id/btn_cheat"
+        android:onClick="onCheatButtonClick"
+        android:background="#575654"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/btn_hint"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:id="@+id/button3"
+        android:onClick="onNextButtonClick"
+        android:background="#575654"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="44dp" />
+</RelativeLayout>
